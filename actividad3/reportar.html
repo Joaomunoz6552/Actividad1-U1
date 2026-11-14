@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Rescate | Huellas de Esperanza</title>
+</head>
+<body>
+    <a href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+        <img src="assets/img/refugio%20animales.jpg" 
+        alt="Logo de Huellas de Esperanza - Ancón"
+        width="250">
+
+        <p><strong>Refugio Huellas de Esperanza - Ancón</strong></p>
+        <p>Sistema de Control de Rescate y Adopción</p>
+
+        <nav aria-label="Menú principal">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="reportar.html" aria-current="page">
+                        Reportar rescate
+                    </a>
+                </li>
+                <li>
+                    <a href="rescates.html">Rescates registrados</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <h1>Reportar un rescate</h1>
+
+        <p>
+            Completa la informacion del animal rescatado y describe las condiciones en las que fue encontrado. Esto nos permitirá priorizar la atención y brindar el cuidado necesario.
+        </p>
+
+        <section>
+            <h2>Datos del caso</h2>
+
+            <p>Todos los campos son obligatorios.</p>
+
+            <p id="aviso">
+                Este formulario es un prototipo académico.
+                Los datos ingresados no serán almacenados ni procesados por el sistema.
+            </p>
+
+            <form action="reportar.html"
+                  method="get"
+                  aria-describedby="aviso">
+
+                  <p>
+                        <label for="nombre">
+                            Nombre provisional o titulo del caso
+                        </label>
+                        <br>
+                        <input type="text" 
+                            id="nombre" 
+                            name="nombre"
+                            maxlength="100"
+                            required>
+                  </p>
+
+                  <p>    
+                        <label for="categoria">Categoría del animal</label>
+                        <br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="fauna-silvestre">Fauna Silvestre</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Nivel de urgencia médica</legend>
+
+                        <p>
+                            <input type="radio" 
+                                id="urgencia-alta" 
+                                name="urgencia" 
+                                value="alta" 
+                                required>
+                            <label for="urgencia-alta">Alta</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" 
+                                id="urgencia-media" 
+                                name="urgencia" 
+                                value="media"
+                                required>
+                            <label for="urgencia-media">Media</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" 
+                                id="urgencia-baja" 
+                                name="urgencia" 
+                                value="baja"
+                                required>
+                            <label for="urgencia-baja">Baja</label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <label for="descripcion">
+                            Descripcion del estado del animal y circunstancias del rescate
+                        </label>
+                        <br>
+                        <textarea id="descripcion"
+                                    name="descripcion"
+                                    rows="6"
+                                    maxlength="2000"
+                                    required></textarea>
+                    </p>
+                    
+                    <button type="submit">Enviar reporte</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Orientaciones para completar el reporte</h2>
+
+            <article>
+                <h3>Qué información debes proporcionar?</h3>
+                <p>
+                    Indica dónde encontraste el animal, su comportamiento y su estado de salud.
+                    Esto nos ayudará a priorizar la atención y a entender mejor la situación.     
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Huellas de Esperanza - Ancón · Proyecto académico.</p>
+        <p>&copy; 2026 Joao Muñoz. Todos los derechos reservados.</p>
+        <p>Desarrollo de Sistemas Informáticos.</p>
+    </footer>  
+</body>
+</html>
